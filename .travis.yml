@@ -2,8 +2,8 @@
 # travis-ci.org definition
 
 # non-container builds don't have enough RAM to reliably compile
-sudo: false
-#dist: trusty
+sudo: true
+dist: trusty
 
 language: cpp
 compiler:
