@@ -251,17 +251,19 @@ ENDMACRO()
 # subdirectories, configure sql_builtins.cc
 MACRO(CONFIGURE_PLUGINS)
   IF(NOT WITHOUT_SERVER)
-    ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/innobase/")
-    FILE(GLOB dirs_storage ${CMAKE_SOURCE_DIR}/storage/innobase/*)
+    FILE(GLOB dirs_storage ${CMAKE_SOURCE_DIR}/storage/*)
   ENDIF()
 
   # default storage engines
+  ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/myisam/")
   ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/maria/")
-  FILE(GLOB dirs_se_maria ${CMAKE_SOURCE_DIR}/storage/maria/*)
+  ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/innobase/")
+  ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/perfschema/")
 
   FILE(GLOB dirs_plugin ${CMAKE_SOURCE_DIR}/plugin/*)
 
-  #FOREACH(dir ${dirs_se_maria} ${dirs_storage} ${dirs_plugin})
+  # add the plugins
+  #FOREACH(dir ${dirs_storage} ${dirs_plugin})
   #  IF (EXISTS ${dir}/CMakeLists.txt)
   #    ADD_SUBDIRECTORY(${dir})
   #  ENDIF()
