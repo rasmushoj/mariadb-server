@@ -261,11 +261,11 @@ MACRO(CONFIGURE_PLUGINS)
 
   FILE(GLOB dirs_plugin ${CMAKE_SOURCE_DIR}/plugin/*)
 
-  FOREACH(dir ${dirs_se_maria} ${dirs_storage} ${dirs_plugin})
-    IF (EXISTS ${dir}/CMakeLists.txt)
-      ADD_SUBDIRECTORY(${dir})
-    ENDIF()
-  ENDFOREACH()
+  #FOREACH(dir ${dirs_se_maria} ${dirs_storage} ${dirs_plugin})
+  #  IF (EXISTS ${dir}/CMakeLists.txt)
+  #    ADD_SUBDIRECTORY(${dir})
+  #  ENDIF()
+  #ENDFOREACH()
 
   GET_CMAKE_PROPERTY(ALL_VARS VARIABLES)
   FOREACH (V ${ALL_VARS})
