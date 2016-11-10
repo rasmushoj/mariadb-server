@@ -251,7 +251,7 @@ ENDMACRO()
 # subdirectories, configure sql_builtins.cc
 MACRO(CONFIGURE_PLUGINS)
   IF(NOT WITHOUT_SERVER)
-    FILE(GLOB dirs_storage ${CMAKE_SOURCE_DIR}/storage/*)
+    FILE(GLOB dirs_storage ${CMAKE_SOURCE_DIR}/storage/innobase/*)
   ENDIF()
 
   FILE(GLOB dirs_plugin ${CMAKE_SOURCE_DIR}/plugin/*)
