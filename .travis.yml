@@ -39,8 +39,9 @@ addons:
       - devscripts # implicit for any build on Ubuntu
 
 script:
+  - CHANGED_FILES=($(git diff --name-only $TRAVIS_COMMIT_RANGE))  
   - ${CC} --version ; ${CXX} --version
-  - cmake . && make
+  - cmake . && make && make test
 
 # notifications:
 #  irc:
