@@ -43,11 +43,11 @@ script:
   - cd "${TRAVIS_BUILD_DIR}"
   - env DEB_BUILD_OPTIONS="parallel=4" debian/autobake-deb.sh;
 
-notifications:
-  irc:
-    channels:
-      - "chat.freenode.net#maria"
-    on_success: never # [always|never|change]
-    on_failure: never
-    template:
-      - "%{repository}/%{branch} (%{commit} - %{author}): %{build_url}: %{message}"
+# notifications:
+#  irc:
+#    channels:
+#      - "chat.freenode.net#maria"
+#    on_success: never # [always|never|change]
+#    on_failure: never
+#    template:
+#      - "%{repository}/%{branch} (%{commit} - %{author}): %{build_url}: %{message}"
