@@ -40,8 +40,7 @@ addons:
 
 script:
   - ${CC} --version ; ${CXX} --version
-  - cd "${TRAVIS_BUILD_DIR}"
-  - env DEB_BUILD_OPTIONS="parallel=4" debian/autobake-deb.sh;
+  - cmake . && make
 
 # notifications:
 #  irc:
