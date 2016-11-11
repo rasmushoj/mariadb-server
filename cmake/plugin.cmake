@@ -261,8 +261,14 @@ MACRO(CONFIGURE_PLUGINS)
   ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/perfschema/")
 
   FILE(GLOB dirs_plugin ${CMAKE_SOURCE_DIR}/plugin/*)
-
+  
   # add the plugins
+  FOREACH(dir ${dirs_plugin})
+    IF (EXISTS ${dir}/CMakeLists.txt)
+      ADD_SUBDIRECTORY(${dir})
+    ENDIF()
+  ENDFOREACH()
+
   #FOREACH(dir ${dirs_storage} ${dirs_plugin})
   #  IF (EXISTS ${dir}/CMakeLists.txt)
   #    ADD_SUBDIRECTORY(${dir})
