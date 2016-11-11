@@ -37,13 +37,32 @@ addons:
       - libcrack2-dev
       - libjemalloc-dev
       - devscripts # implicit for any build on Ubuntu
+      
+env:
+  - STORAGE_ENGINE=archive
+  - STORAGE_ENGINE=blackhole
+  - STORAGE_ENGINE=connect
+  - STORAGE_ENGINE=csv
+  - STORAGE_ENGINE=example
+  - STORAGE_ENGINE=federated
+  - STORAGE_ENGINE=federatedx
+  - STORAGE_ENGINE=heap
+  - STORAGE_ENGINE=mroonga
+  - STORAGE_ENGINE=myisammrg
+  - STORAGE_ENGINE=oqgraph
+  - STORAGE_ENGINE=sequence
+  - STORAGE_ENGINE=sphinx
+  - STORAGE_ENGINE=spider
+  - STORAGE_ENGINE=test_sql_directory
+  - STORAGE_ENGINE=tokudb
+  - STORAGE_ENGINE=xtradb
 
 script:
   - chmod +x .travis/changed_files.sh
   - .travis/changed_files.sh
   - CHANGED_FILES=($(git diff --name-only $TRAVIS_COMMIT_RANGE))  
   - ${CC} --version ; ${CXX} --version
-  - cmake -DSTORAGE_ENGINE=mroonga . && make && make test
+  - cmake -DSTORAGE_ENGINE=$STORAGE_ENGINE . && make && make test
 
 # notifications:
 #  irc:

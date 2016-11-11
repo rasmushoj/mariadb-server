@@ -9,4 +9,10 @@
 echo TRAVIS_COMMIT_RANGE: $TRAVIS_COMMIT_RANGE
 git diff --name-only $TRAVIS_COMMIT_RANGE
 CHANGED_FILES=($(git diff --name-only $TRAVIS_COMMIT_RANGE))
-echo CHANGED_FILES: $CHANGED_FILES bllaaaaaah
+
+for i in "${CHANGED_FILES=[@]}"
+do
+  echo $i titituu
+done 
+
+echo CHANGED_FILES: $CHANGED_FILES
