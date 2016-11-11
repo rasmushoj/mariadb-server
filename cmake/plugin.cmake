@@ -260,6 +260,10 @@ MACRO(CONFIGURE_PLUGINS)
   ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/innobase/")
   ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/perfschema/")
 
+  IF (STORAGE_ENGINE MATCHES "tokudb")
+    ADD_SUBDIRECTORY("${CMAKE_SOURCE_DIR}/storage/tokudb/")
+  ENDIF()
+
   FILE(GLOB dirs_plugin ${CMAKE_SOURCE_DIR}/plugin/*)
   
   # add the plugins

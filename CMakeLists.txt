@@ -171,6 +171,9 @@ IF(DISABLE_SHARED)
 ENDIF()
 OPTION(ENABLED_PROFILING "Enable profiling" ON)
 OPTION(WITHOUT_SERVER "Build only the client library and clients" OFF)
+
+OPTION(STORAGE_ENGINE "Specify specific storage engine to include in build" "")
+
 IF(UNIX)
   OPTION(WITH_VALGRIND "Valgrind instrumentation" OFF)
 ENDIF()
