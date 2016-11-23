@@ -63,7 +63,7 @@ script:
   - CHANGED_FILES=($(git diff --name-only $TRAVIS_COMMIT_RANGE))  
   - ${CC} --version ; ${CXX} --version
   - cmake -DSTORAGE_ENGINE=$STORAGE_ENGINE . && make && make test
-  - echo DONE
+  - echo DONE TADAA
 
 # notifications:
 #  irc:
