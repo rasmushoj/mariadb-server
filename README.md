@@ -47,8 +47,8 @@ License:
 NOTE: 
 
 MariaDB is specifically available only under version 2 of the GNU
-General Public License (GPLv2). (I.e. Without the "any later version"
-clause.) This is inherited from MySQL. Please see the README file in
+General Public License (GPLv2), i.e. without the "any later version"
+clause. This is inherited from MySQL. Please see the README file in
 the MySQL distribution for more information.
 
 License information can be found in the COPYING, COPYING.LESSER,
