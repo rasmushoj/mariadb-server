@@ -5,7 +5,7 @@ features, new storage engines, fewer bugs, and better performance.
 
 MariaDB is brought to you by the MariaDB Foundation.
 Please read the CREDITS file for details about the MariaDB Foundation,
-and who is developing MariaDB.
+and who is developing MariaDB Server.
 
 MariaDB is developed by many of the original developers of MySQL who
 now work for the MariaDB Foundation and the MariaDB Corporation, and by many people in
