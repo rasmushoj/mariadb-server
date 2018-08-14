@@ -48,7 +48,7 @@ You can help support MariaDB by becoming a MariaDB developer or a
 sponsor of the MariaDB Foundation. To donate or sponsor, 
 go to https://mariadb.org/donate/
 
-You can get a list of all the main authors of MariaDB / MySQL by running 
+You can get a list of all the main authors of MariaDB(R) / MySQL by running 
 SHOW AUTHORS;
 
 You can get a list sponsors and contributors by running 
