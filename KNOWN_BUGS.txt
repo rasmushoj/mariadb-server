@@ -9,6 +9,7 @@ There should not normally be any bugs which affect normal operations
 in any MariaDB release. Still, there are always exceptions and edge
 cases and that is what this file is for.
 
+
 If you have found a bug that is not listed here, please add it to
 http://mariadb.org/jira so we can either fix it for next release or in
 the worst case add it here for others to know!
