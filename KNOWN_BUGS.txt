@@ -1,4 +1,4 @@
-This file should contain all known fatal bugs in Mariadb and the Aria
+This file should contain all known fatal bugs in Mariadb and the Aria(R)
 storage engine for the last source or binary release. Minor bugs,
 extensions and feature requests, and bugs found since this release can
 be found in the MariaDB bugs database at: http://mariadb.org/jira and
