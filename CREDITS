@@ -34,7 +34,7 @@ repository, the official MariaDB binaries and http://mariadb.org.
 The MariaDB Foundation also provides, among other things, the
 following services to the MariaDB community:
 
-- Code reviews and applying patches for MariaDB
+- Code reviews and applying patches for MariaDB (R)
 - QA and testing of the MariaDB server
 - Merging MySQL patches into MariaDB
 - Bug fixing in MariaDB (for bugs that affects a large part of the community)
@@ -48,7 +48,7 @@ You can help support MariaDB by becoming a MariaDB developer or a
 sponsor of the MariaDB Foundation. To donate or sponsor, 
 go to https://mariadb.org/donate/
 
-You can get a list of all the main authors of MariaDB / MySQL by running 
+You can get a list of all the main authors of MariaDB(R) / MySQL by running 
 SHOW AUTHORS;
 
 You can get a list sponsors and contributors by running 
