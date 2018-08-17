@@ -15,7 +15,7 @@ http://mariadb.org/jira so we can either fix it for next release or in
 the worst case add it here for others to know!
 
 
-IMPORTANT:
+IMPORTANT_:
 
 If you have been using the Maria (now Aria) storage engine with the
 MySQL-5.1-Maria-alpha build and are upgrading to a newer MariaDB you
