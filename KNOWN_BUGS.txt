@@ -33,3 +33,4 @@ to make upgrades as easy as possible.
 Note that for the MariaDB 5.1 release the Aria storage engine is
 classified as 'beta'; It should work, but use it with caution. Please
 report all bugs to http://mariadb.org/jira so we can fix them!
+(R)
