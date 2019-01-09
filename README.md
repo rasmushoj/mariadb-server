@@ -2,7 +2,7 @@ Code status:
 ------------
 
 * [![tests status](https://secure.travis-ci.org/MariaDB/server.png?branch=10.4)](https://travis-ci.org/MariaDB/server) travis-ci.org (10.4 branch)
-* https://ci.appveyor.com/api/projects/status/4u6pexmtpuf8jq66/branch/10.4?svg=true ci.appveyor.com (10.4 branch)
+* [![tests status](https://ci.appveyor.com/api/projects/status/4u6pexmtpuf8jq66/branch/10.4?svg=true) ci.appveyor.com (10.4 branch)
 
 ## MariaDB: drop-in replacement for MySQL
 
