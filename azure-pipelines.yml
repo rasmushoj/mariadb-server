@@ -15,7 +15,7 @@ variables:
   buildConfiguration: 'Release'
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\'
 
-# steps:
+steps:
 # - task: CMake@1
 # - task: VSBuild@1
 #  inputs:
