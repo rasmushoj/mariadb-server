@@ -10,7 +10,7 @@ pool:
   vmImage: 'VS2017-Win2016'
 
 variables:
-  solution: 'win_build\MySQL.sln'
+  solution: 'MySQL.sln'
   buildPlatform: 'x64'
   buildConfiguration: 'Release'
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\'
