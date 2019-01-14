@@ -16,11 +16,6 @@ variables:
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\'
 
 steps:
-# - task: CMake@1
-# - task: VSBuild@1
-#  inputs:
-#    restoreSolution: '$(solution)'
-
 # CMake
 # Build with the CMake cross-platform build system
 - task: CMake@1
