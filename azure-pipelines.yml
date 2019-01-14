@@ -17,9 +17,17 @@ variables:
 
 steps:
 
+# CMake
+# Build with the CMake cross-platform build system
+- task: CMake@1
+  inputs:
+    workingDirectory: 'win_build' # Optional
+    cmakeArgs: '.. -G "Visual Studio 15 2017 Win64" -DWITH_UNIT_TESTS=0 -DWITH_MARIABACKUP=0 -DMYSQL_MAINTAINER_MODE=ERR -DPLUGIN_ROCKSDB=NO -DPLUGIN_CONNECT=NO -DBISON_EXECUTABLE=C:\cygwin64\bin\bison'
+
 - task: VSBuild@1
   inputs:
-    platform: 'x86'
+    workingDirectory: 'win_build'
+    platform: 'x64'
     solution: '$(solution)'
     configuration: '$(buildConfiguration)'
     msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
