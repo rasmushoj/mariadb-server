@@ -66,7 +66,6 @@ Bug Reports:
 
 Bug and/or error reports regarding MariaDB should be submitted at
 https://mariadb.org/jira
-
 Bugs in the MySQL code can also be submitted at https://bugs.mysql.com
 
 The code for MariaDB, including all revision history, can be found at:
