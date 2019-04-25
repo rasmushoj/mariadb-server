@@ -22,7 +22,7 @@ Corporation, Inc. For a list of developers and other contributors,
 see the Credits appendix.  You can also run 'SHOW authors' to get a
 list of active contributors.
 
-A description of the MariaDB project and a manual can be found at:
+A description of the MariaDB(R) project and a manual can be found at:
 
 https://mariadb.org/
 
